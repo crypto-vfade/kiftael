@@ -23,9 +23,9 @@
     <script>
     function startTime() {
     const today = new Date();
-    let h = today.getHours();
-    let m = today.getMinutes();
-    let s = today.getSeconds();
+    let h = today.getUTCHours();
+    let m = today.getUTCMinutes();
+    let s = today.getUTCSeconds();
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
